@@ -141,15 +141,29 @@ table {
 }
 /*----- END OF FONTS  ------- */
 
-body {
-    font-family: "Raleway-Light", sans-serif;
-}
-
-
 .site-container {
     max-width: 1240px;
     margin: 0 auto;
+    display:block;
 }
+
+h2 {
+    font-family: "PlayfairDisplay-Regular", serif;
+    justify-content: center;
+    font-size: 2rem
+
+}
+
+
+.strong {
+    font-style: normal;
+}
+
+p {
+    font-family: "Raleway-Medium", sans-serif;
+}
+
+
 
 .site-header-container {
     padding: 1rem;
@@ -177,9 +191,7 @@ body {
 
 .main-navigation li {
     display: inline-block;
-
     color:red;
-
 }
 
 .cart img {
@@ -188,40 +200,84 @@ body {
     width: 4rem;
 }
 /* ---------------------END OF HEADER ---------*/
-.banner .banner-girl {
-    z-index: 2;
-    position: relative;
-}
 
+/* ------BANNER ------*/
 
 .banner {
-    background-image: url("images/flower-bkgd.jpg");
-    background-repeat: repeat-y 5;
+    background: url("images/banner-girl.png") no-repeat center 10%,
+                url("images/flower-bkgd.jpg") repeat-y ;
     display: flex;  
-    align-items: center;
+    height: 700px;
     border: solid #2d2d2d 2px;
+    align-items: center;
+    flex-flow: column;
 }
 
+.banner-collection .banner-season {
+    width: 25%;
+    height: 25%;
+    margin: 50px;
+    padding: 25px;
+    text-align: center;
+}
 
+/*------ ABOUT ----- */
 
+.about {
+    border: solid red;
+    padding: 10%;
+    line-height: 200%;
+    text-align: center;
+}
 
 .categories {
     display:none;
     background-color:black;
 }
+
+/*-----------------MOST LOVED ITEMS ----------*/
+
+.most-loved-products {
+    display: flex;
+    width:auto;
+}
+
+
+
+/*-----  SUBSCRIBE AREA ------ */
+.newsletter img {
+    height:100px;
+}
+
+/*----- FOOTER  ------*/
 .site-footer {
-    background-color: #2d2d2d;
-    display:flex;
-    width: 1240px;
-    align-content: ;
-    color: white;
-
+    border:solid red;
+    background: #ddd;
+    display:flex; 
+      
 }
+
 .company-info {
-    background-color: azure;
+    float: left;
 }
 
-.social-links  {
-    padding: 25%;
-   background-color:white;
+.social-links {
+    float: right;
+}
+
+/* media      */
+
+@media screen (min-width: 600px) { 
+    .site-container { 
+        font-size: 16px;
+       
+    }
+}
+
+@media screen (max-width: 234px) {
+     .site-container {
+        font-size: 14px; 
+
+    }
+
 }
