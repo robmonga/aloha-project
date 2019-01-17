@@ -35,6 +35,7 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
+
     content: ‘’;
     content: none;
 }
@@ -139,86 +140,119 @@ table {
     font-weight: normal;
     font-style: italic;
 }
-/*----- END OF FONTS  ------- */
-
+/*----- END OF FONTS  ------------------------------------
+------------------------------------------------------------------------
+=---------------------------------------------------------------------- */
 .site-container {
     max-width: 1240px;
-    margin: 0 auto;
-    display:block;
 }
-
 h2 {
     font-family: "PlayfairDisplay-Regular", serif;
     justify-content: center;
-    font-size: 2rem
+    font-size: 30pt;
 
 }
+a, a:hover {
+    text-decoration: none;
+    color: #b64036;
+}
+/* a:hover {
+    color:#b64036;
+    font-family: "Raleway-Light";
+} */
 
-
+.italics {
+    font-style: italic;
+    font-family: ""
+}
+ 
 .strong {
-    font-style: normal;
+    font-weight: bold;
 }
 
-p {
+p, li, h1 {
     font-family: "Raleway-Medium", sans-serif;
 }
 
 
 
-.site-header-container {
-    padding: 1rem;
-    border:solid red;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    display: flex;
-    align-content: center;
-}
+/* ---------------------HEADER --------------------*/
 
-.logo {
-    flex-grow: 1;
-    justify-content: flex-start;
-}
-.logo img {
-    width: 10rem;
-
-}
 .main-navigation {
-    flex-grow: 2;
-    word-spacing:15px;   
-    padding: 2rem;
-    margin
+    text-decoration: none;
+    color: #e2574c;
+    font-family: "Raleway-Light";
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    outline: solid red;
+    order:2;
+    padding:15px;
+    flex: 0 50%
 }
 
-.main-navigation li {
+.site-header {
+    display:flex;
+    padding: 5px 5px;
+    align-items: center;
+    text-align: center;
+    outline: solid blue;
+
+}
+
+ .logo img {
+     padding: 40px;
+    width: 150px;
+    order:1;
+}
+
+
+ .cart {
+    outline: solid red;
+    order:3;
+    flex: 10%;
+}
+
+.site-header li {
     display: inline-block;
-    color:red;
+    padding:1em;
+    align-items: center;
+    justify-content: center;
 }
 
-.cart img {
-    justify-content: flex-end;
-    flex-grow: 1;
-    width: 4rem;
-}
-/* ---------------------END OF HEADER ---------*/
 
-/* ------BANNER ------*/
+/*-----HOVER RULE FOR THE ENTIRE PAGE--------*/
+a:hover {
+    color:#b64036;
+}
+
+/* ------- BANNER -----*/
 
 .banner {
-    background: url("images/banner-girl.png") no-repeat center 10%,
-                url("images/flower-bkgd.jpg") repeat-y ;
-    display: flex;  
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("images/banner-girl.png") no-repeat center  10%,
+                url("images/flower-bkgd.jpg") repeat-x ;
     height: 700px;
     border: solid #2d2d2d 2px;
+    display: flex;
     align-items: center;
-    flex-flow: column;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+}
+.banner img {
+    position: relative;
+    width: 30%;
+}
+.banner-collection {
+    min-height: 400px;
+    text-align: center;
 }
 
-.banner-collection .banner-season {
-    width: 25%;
-    height: 25%;
-    margin: 50px;
-    padding: 25px;
-    text-align: center;
+.seasonal-collection {
+   font-size: 60px;
+   font-family:"Raleway-Light";
 }
 
 /*------ ABOUT ----- */
@@ -230,43 +264,83 @@ p {
     text-align: center;
 }
 
+/* ------- Categories */
+
 .categories {
-    display:none;
-    background-color:black;
+    display:flex;
 }
 
+.
+
+
+
 /*-----------------MOST LOVED ITEMS ----------*/
+.most-loved-products h2 {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
 
 .most-loved-products {
     display: flex;
+    flex-direction: row;
     width:auto;
+    border: solid #e2574c;
 }
 
 
 
 /*-----  SUBSCRIBE AREA ------ */
-.newsletter img {
-    height:100px;
+.email-form {
+    display: block;
+    position: relative;
+    border:solid #e2574c;   
 }
 
+.newsletter {
+    overflow: hidden;
+    position: relative;
+    background: url("images/wave-bkgd.jpg") no-repeat bottom;
+    height: 400px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    padding-top:90px;
+    color:white;
+}
+.newsletter p {
+    padding-top:10px;
+    text-align: center;
+    width: 50px;
+    border: solid red;
+    display: inline;
+    margin: 10px;
+    color:white;
+}
+
+
 /*----- FOOTER  ------*/
+
 .site-footer {
     border:solid red;
-    background: #ddd;
-    display:flex; 
-      
+    background: #242424;
+    overflow: hidden;
 }
 
 .company-info {
+    border:solid red;
     float: left;
 }
 
 .social-links {
-    float: right;
+    border:solid red;
+    float:right;
 }
 
-/* media      */
 
+
+/* media      */
 @media screen (min-width: 600px) { 
     .site-container { 
         font-size: 16px;
@@ -280,4 +354,14 @@ p {
 
     }
 
+}
+
+
+/* --------------MEDIA QUERIES ----------------*/
+
+@media screen and (max-width: 600px); {
+    {
+    display: none;
+   }
+    
 }
