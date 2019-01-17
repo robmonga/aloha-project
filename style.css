@@ -200,8 +200,8 @@ p, li, h1 {
 
 }
 
- .logo img {
-     padding: 40px;
+ .logo img  o {
+    padding: 40px;
     width: 150px;
     order:1;
 }
