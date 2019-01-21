@@ -229,8 +229,7 @@ table {
 ------------------------------------------------------------------------
 =---------------------------------------------------------------------- */
 .site-container {
-  max-width: 1240px;
-}
+ }
 h2 {
   font-family: "PlayfairDisplay-Regular", serif;
   justify-content: center;
@@ -241,6 +240,8 @@ a:hover {
   text-decoration: none;
   color: #b64036;
 }
+
+
 /* a:hover {
     color:#b64036;
     font-family: "Raleway-Light";
@@ -270,7 +271,6 @@ h1 {
   align-items: center;
   justify-content: center;
   display: flex;
-  outline: solid red;
   order: 2;
   padding: 15px;
   flex: 0 50%;
@@ -291,9 +291,12 @@ h1 {
 }
 
 .cart {
-  outline: solid red;
   order: 3;
+  padding-left: 3rem;
+}
+.cart img {
   flex: 10%;
+  width: 3rem;
 }
 
 .site-header li {
@@ -312,8 +315,8 @@ a:hover {
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/banner-girl.png") no-repeat center 10%,
-    url("images/flower-bkgd.jpg") repeat-x;
+    url("images/banner-girl.png") center top 60px no-repeat,
+    url("images/flower-bkgd.jpg") center;
   height: 700px;
   border: solid #2d2d2d 2px;
   display: flex;
@@ -337,23 +340,94 @@ a:hover {
 /*------ ABOUT ----- */
 
 .about {
-  border: solid red;
   padding: 10%;
   line-height: 200%;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  width: 75%;
   text-align: center;
 }
 
 /* ------- Categories */
 
 .categories {
-  height: 500px;
-  background: url("images/mens-category.jpg"),url("images/trends-category.jpg"),url("images/glasses-category.jpg"),url("images/sale-category.jpg"),url("images/bags-category.jpg"),url("images/womens-category.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex-flow: row wrap;
-  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
+.categories div{
+  box-sizing: border-box;
+  padding-top: 25%;
+  position: relative;
+}
+
+.categories p {
+  justify-content: center;
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase; 
+  align-items: baseline; 
+}
+
+.mens {
+  background-image: url("images/mens-category.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: center;
+  border: solid white;
+  flex-basis: 50%
+}
+
+.trends {
+  background-image: url("images/trends-category.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: center;
+  flex-basis: 25%;
+  border: solid white;
+
+}
+.glasses {
+  background-image: url("images/glasses-category.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: center;
+  flex-basis: 25%;
+  display: block;
+  border: solid white;
+}
+.sale {
+  background-image: url("images/sale-category.jpg");
+  background-repeat: no-repeat;
+  background-size: cover, cover;
+  background-position: center;
+  flex-basis: 25%;
+  border: solid white;
+}
+
+.bags {
+background-image:url("images/bags-category.jpg") ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover, cover;
+flex-basis: 25%;
+border: solid white;
+
+}
+.womens {
+  background-image:url("images/womens-category.jpg");
+  background-size: cover, cover;
+    background-position: center;
+  background-repeat: no-repeat;
+  flex-basis: 50%;
+  border: solid white;
+}
 
 /*-----------------MOST LOVED ITEMS ----------*/
 
@@ -365,8 +439,9 @@ a:hover {
 }
 
  .most-loved-products {
-  text-align: center; 
-  height:460px;
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem; 
 }
 
 
@@ -374,7 +449,22 @@ a:hover {
 .email-form {
   display: block;
   position: relative;
-  border: solid #e2574c;
+  padding: 20px;
+}
+
+.email-form input {
+  border-radius: 25px;
+  width: 20rem;
+  line-height: 2;
+  border: none;
+}
+
+.submit {
+  border-radius: 25px;
+  border: none;
+  line-height: 2;
+  background-color: #e2574c;
+  text-decoration: none;
 }
 
 .newsletter {
@@ -387,13 +477,12 @@ a:hover {
 
 .newsletter h2 {
   padding-top: 90px;
-  color: white;
+  color: white; 
 }
 .newsletter p {
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
   width: 50px;
-  border: solid red;
   display: inline;
   margin: 10px;
   color: white;
@@ -402,39 +491,38 @@ a:hover {
 /*----- FOOTER  ------*/
 
 .site-footer {
-  border: solid red;
   background: #242424;
+  padding: 4rem;
   overflow: hidden;
+  line-height: 1.6;
+
 }
 
 .company-info {
-  border: solid red;
   float: left;
+  color: #fff;
+  font-family: "PlayfairDisplay-Regular"
+}
+
+.company-info p:last-child {
+  color:#969696;
 }
 
 .social-links {
-  border: solid red;
   float: right;
 }
 
+.social-links a{
+  color: #fff;
+}
+
+
+
 /* --------------MEDIA QUERIES ----------------*/
 
-@media screen and (max-width: 600px);
-{
-  {
-    display: none;
-  }
-}
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .site-container {
-    font-size: 16px;
-    display: inline;
-  }
-}
-
-@media screen (max-width: 234px) {
-  .site-header {
-    font-size: 14px;
+    
   }
 }

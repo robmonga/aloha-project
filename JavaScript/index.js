@@ -1,9 +1,8 @@
-// $(function() {
-//   $('submit').on(click, function()
-//   alert("button clicked");
-//   )
-
-// });
+$("form").on("click", "button", function(event) {
+  event.preventDefault();
+  alert("Thanks for subscribing");
+  $(".submit").val("");
+});
 
 // mmost loved products carousel from flickity @ https://flickity.metafizzy.co/ 
 $('.main-carousel').flickity({
@@ -13,6 +12,7 @@ $('.main-carousel').flickity({
     percentPosition:false,
     autoPlay:true,
     prevNextButtons:false,
+    resize:true,
   });
 //  smooth scrolling source @ https://css-tricks.com/snippets/jquery/smooth-scrolling/
   $(function() {
