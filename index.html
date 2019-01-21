@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link href="style.css" type="text/css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="flickity.css" media="screen">
 
     <title>Aloha &nbsp; Apparel Co.</title>
 </head>
@@ -53,13 +53,13 @@
 
 
 
-    <section class="about">
+    <section class="about" id="about">
         <h2><span class="italics">Hand-Crafted </span><span class="strong">Styles</span></h2>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing.
             Browser our current selection of products or sign-up for updates below</p>
     </section>
-    <section class="categories">
-        <div class="mens">
+    <section class="categories" id="shop">
+        <!-- <div class="mens">
             <img src="images/mens-category.jpg" alt="Men's">
         </div>
         <div class="trends">
@@ -76,15 +76,15 @@
         </div>
         <div class="womens">
             <img src="images/womens-category.jpg" alt="womens">
-        </div>
+        </div> -->
     </section>
 
-    <section class="most-loved-products">
+    <section class="most-loved-products" id="featured">
         <h2><span class="italics">Most-Loved </span><span class="strong">Products</span></h2>
-
+      <div class="main-carousel">
         <div class="checked-stretch-dress">
             <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
-        <p>Dresses</span>
+            <p>Dresses</span>
             <h3>Checked Stretch Dress</h3>
             <p>$129.00</p>
         </div>
@@ -106,12 +106,46 @@
             <h3>Pink Dotted Dresses</h3>
             <p>$99.00</p>
         </div>
+        <div>
+                <img src="images\stretch-knit-dress.jpg" alt="stretch knit dress">
+                <p>Dresses</p>
+                <h3>Stretch Knit Dress</h3>
+                <p>$169.00</p>
+            </div>
+            
+            <div>
+                <img src="images\cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
+                <p>Shirts</p>
+                <h3>Cotoon Blue Shirt</h3>
+                <p>$89.00</p>
+            </div>
+            <div>
+                <img src="images\checked-stretch-dress.jpg" alt="Checked Stretch Dress">
+                <p>Dresses</p>
+                <h3>Checked Stretch Dress</h3>
+                <p>$129.00</p>
+            </div>
+            <div>
+                <img src="images\blue-silk-dress.jpg" alt="Blue Silk Dress">
+                <p>Dresses</p>
+                <h3>Blue Silk Dress</h3>
+                <p>$119.00</p>
+            </div>
+            <div>
+                <img src="images\cotton-yellow-tshirt.jpg" alt="Cotton yellow T-Shirt">
+                <p>Shirts</p>
+                <h3>Cotton Yellow Y-Shirt</h3>
+                <p>$39.00</p>
+            </div>
+            
+    </div>   
+
 
 
     </section>
 
 
-    <section class="newsletter">
+    <section class="newsletter" id="updates">
         <h2><span class="italics">Sign-up for </span><span class="strong">updates</span></h2>
         <p>Stay updated on our latest product releases, be first to find out about
             upcoming sales, and get free style tips from our blog. Unsubscribe any time.</p>
@@ -142,7 +176,9 @@
             </ul>
         </div>
     </Footer>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="flickity.pkgd.min.js"></script>
     <script src="JavaScript/index.js"></script>
 </body>
 
-</html>
+</html> 

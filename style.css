@@ -1,160 +1,245 @@
 /* CSS RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-
-    content: ‘’;
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ‘’;
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* ----------- start of     FONTS    ---------- */
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-MediumItalic.eot');
-    src: url('fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-MediumItalic.woff2') format('woff2'),
-        url('fonts/Raleway-MediumItalic.woff') format('woff'),
-        url('fonts/Raleway-MediumItalic.ttf') format('truetype'),
-        url('fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-MediumItalic.eot");
+  src: url("fonts/Raleway-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-MediumItalic.woff2") format("woff2"),
+    url("fonts/Raleway-MediumItalic.woff") format("woff"),
+    url("fonts/Raleway-MediumItalic.ttf") format("truetype"),
+    url("fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Medium.eot');
-    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Medium.woff2') format('woff2'),
-        url('fonts/Raleway-Medium.woff') format('woff'),
-        url('fonts/Raleway-Medium.ttf') format('truetype'),
-        url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Medium.eot");
+  src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Medium.woff2") format("woff2"),
+    url("fonts/Raleway-Medium.woff") format("woff"),
+    url("fonts/Raleway-Medium.ttf") format("truetype"),
+    url("fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Light.eot');
-    src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-Light.woff2') format('woff2'),
-        url('fonts/Raleway-Light.woff') format('woff'),
-        url('fonts/Raleway-Light.ttf') format('truetype'),
-        url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Light.eot");
+  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Light.woff2") format("woff2"),
+    url("fonts/Raleway-Light.woff") format("woff"),
+    url("fonts/Raleway-Light.ttf") format("truetype"),
+    url("fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-LightItalic.eot');
-    src: url('fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Raleway-LightItalic.woff2') format('woff2'),
-        url('fonts/Raleway-LightItalic.woff') format('woff'),
-        url('fonts/Raleway-LightItalic.ttf') format('truetype'),
-        url('fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Raleway";
+  src: url("fonts/Raleway-LightItalic.eot");
+  src: url("fonts/Raleway-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-LightItalic.woff2") format("woff2"),
+    url("fonts/Raleway-LightItalic.woff") format("woff"),
+    url("fonts/Raleway-LightItalic.ttf") format("truetype"),
+    url("fonts/Raleway-LightItalic.svg#Raleway-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-BoldItalic.eot');
-    src: url('fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
-        url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
-        url('fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-BoldItalic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Bold.eot');
-    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
-        url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
-        url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Bold.eot");
+  src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Bold.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Regular.eot');
-    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
-        url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
-        url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.eot");
+  src: url("fonts/PlayfairDisplay-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-Italic.eot');
-    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
-        url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
-        url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic.eot");
+  src: url("fonts/PlayfairDisplay-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Italic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Italic.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
 }
 /*----- END OF FONTS  ------------------------------------
 ------------------------------------------------------------------------
 =---------------------------------------------------------------------- */
 .site-container {
-    max-width: 1240px;
+  max-width: 1240px;
 }
 h2 {
-    font-family: "PlayfairDisplay-Regular", serif;
-    justify-content: center;
-    font-size: 30pt;
-
+  font-family: "PlayfairDisplay-Regular", serif;
+  justify-content: center;
+  font-size: 30pt;
 }
-a, a:hover {
-    text-decoration: none;
-    color: #b64036;
+a,
+a:hover {
+  text-decoration: none;
+  color: #b64036;
 }
 /* a:hover {
     color:#b64036;
@@ -162,206 +247,194 @@ a, a:hover {
 } */
 
 .italics {
-    font-style: italic;
-    font-family: ""
+  font-style: italic;
+  font-family: "";
 }
- 
+
 .strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-p, li, h1 {
-    font-family: "Raleway-Medium", sans-serif;
+p,
+li,
+h1 {
+  font-family: "Raleway-Medium", sans-serif;
 }
-
-
 
 /* ---------------------HEADER --------------------*/
 
 .main-navigation {
-    text-decoration: none;
-    color: #e2574c;
-    font-family: "Raleway-Light";
-    align-items: center;
-    justify-content: center;
-    display:flex;
-    outline: solid red;
-    order:2;
-    padding:15px;
-    flex: 0 50%
+  text-decoration: none;
+  color: #e2574c;
+  font-family: "Raleway-Light";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  outline: solid red;
+  order: 2;
+  padding: 15px;
+  flex: 0 50%;
 }
 
 .site-header {
-    display:flex;
-    padding: 5px 5px;
-    align-items: center;
-    text-align: center;
-    outline: solid blue;
-
+  display: flex;
+  padding: 5px 5px;
+  align-items: center;
+  text-align: center;
+  outline: solid blue;
 }
 
- .logo img  o {
-    padding: 40px;
-    width: 150px;
-    order:1;
+.logo img {
+  padding: 40px;
+  width: 150px;
+  order: 1;
 }
 
-
- .cart {
-    outline: solid red;
-    order:3;
-    flex: 10%;
+.cart {
+  outline: solid red;
+  order: 3;
+  flex: 10%;
 }
 
 .site-header li {
-    display: inline-block;
-    padding:1em;
-    align-items: center;
-    justify-content: center;
+  display: inline-block;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /*-----HOVER RULE FOR THE ENTIRE PAGE--------*/
 a:hover {
-    color:#b64036;
+  color: #b64036;
 }
 
 /* ------- BANNER -----*/
 
 .banner {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("images/banner-girl.png") no-repeat center  10%,
-                url("images/flower-bkgd.jpg") repeat-x ;
-    height: 700px;
-    border: solid #2d2d2d 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/banner-girl.png") no-repeat center 10%,
+    url("images/flower-bkgd.jpg") repeat-x;
+  height: 700px;
+  border: solid #2d2d2d 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  overflow: hidden;
 }
-.banner img {
-    position: relative;
-    width: 30%;
-}
+
 .banner-collection {
-    min-height: 400px;
-    text-align: center;
+  min-height: 400px;
+  text-align: center;
 }
 
 .seasonal-collection {
-   font-size: 60px;
-   font-family:"Raleway-Light";
+  font-size: 60px;
+  font-family: "Raleway-Light";
 }
 
 /*------ ABOUT ----- */
 
 .about {
-    border: solid red;
-    padding: 10%;
-    line-height: 200%;
-    text-align: center;
+  border: solid red;
+  padding: 10%;
+  line-height: 200%;
+  text-align: center;
 }
 
 /* ------- Categories */
 
 .categories {
-    display:flex;
+  height: 500px;
+  background: url("images/mens-category.jpg"),url("images/trends-category.jpg"),url("images/glasses-category.jpg"),url("images/sale-category.jpg"),url("images/bags-category.jpg"),url("images/womens-category.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-flow: row wrap;
+  box-sizing: border-box;
 }
-
-.
-
 
 
 /*-----------------MOST LOVED ITEMS ----------*/
-.most-loved-products h2 {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
+
+.most-loved-products h3 {
+  color: #e2574c;
+}
+.most-loved-products p {
+  color: #969696;
 }
 
-.most-loved-products {
-    display: flex;
-    flex-direction: row;
-    width:auto;
-    border: solid #e2574c;
+ .most-loved-products {
+  text-align: center; 
+  height:460px;
 }
-
 
 
 /*-----  SUBSCRIBE AREA ------ */
 .email-form {
-    display: block;
-    position: relative;
-    border:solid #e2574c;   
+  display: block;
+  position: relative;
+  border: solid #e2574c;
 }
 
 .newsletter {
-    overflow: hidden;
-    position: relative;
-    background: url("images/wave-bkgd.jpg") no-repeat bottom;
-    height: 400px;
-    text-align: center;
+  overflow: hidden;
+  position: relative;
+  background: url("images/wave-bkgd.jpg") no-repeat bottom;
+  height: 400px;
+  text-align: center;
 }
 
 .newsletter h2 {
-    padding-top:90px;
-    color:white;
+  padding-top: 90px;
+  color: white;
 }
 .newsletter p {
-    padding-top:10px;
-    text-align: center;
-    width: 50px;
-    border: solid red;
-    display: inline;
-    margin: 10px;
-    color:white;
+  padding-top: 10px;
+  text-align: center;
+  width: 50px;
+  border: solid red;
+  display: inline;
+  margin: 10px;
+  color: white;
 }
-
 
 /*----- FOOTER  ------*/
 
 .site-footer {
-    border:solid red;
-    background: #242424;
-    overflow: hidden;
+  border: solid red;
+  background: #242424;
+  overflow: hidden;
 }
 
 .company-info {
-    border:solid red;
-    float: left;
+  border: solid red;
+  float: left;
 }
 
 .social-links {
-    border:solid red;
-    float:right;
+  border: solid red;
+  float: right;
 }
-
-
-
-/* media      */
-@media screen (min-width: 600px) { 
-    .site-container { 
-        font-size: 16px;
-       
-    }
-}
-
-@media screen (max-width: 234px) {
-     .site-container {
-        font-size: 14px; 
-
-    }
-
-}
-
 
 /* --------------MEDIA QUERIES ----------------*/
 
-@media screen and (max-width: 600px); {
-    {
+@media screen and (max-width: 600px);
+{
+  {
     display: none;
-   }
-    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-container {
+    font-size: 16px;
+    display: inline;
+  }
+}
+
+@media screen (max-width: 234px) {
+  .site-header {
+    font-size: 14px;
+  }
 }
