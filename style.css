@@ -233,7 +233,7 @@ table {
 .site-container {
  }
 h2 {
-  font-family: "PlayfairDisplay-Regular", serif;
+  font-family: "PlayfairDisplay", serif;
   justify-content: center;
   font-size: 30pt;
 }
@@ -255,7 +255,7 @@ a {
 p,
 li,
 h1 {
-  font-family: "Raleway-Medium", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* ---------------------HEADER --------------------*/
@@ -264,8 +264,10 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  padding: 15px;
   flex-direction: row;
+  margin: 5px;
+  box-sizing: border-box;
 }
 
 .logo img {
@@ -274,9 +276,8 @@ h1 {
 }
 
 .cart img {
-  max-width: 60px;
+  max-width: 50px;
   align-self: flex-end;
-  flex-grow: inherit;
 }
 
 .main-navigation a {
@@ -290,14 +291,12 @@ h1 {
   justify-content: center;
 }
 
-/*-----HOVER RULE FOR THE ENTIRE PAGE--------*/
-a:hover {
+.site-header a:hover {
   color: #b64036;
 }
 
-/* ------- BANNER -----
-background: center / contain no-repeat url("../../media/examples/firefox-logo.svg"),
-            #eee 35% url("../../media/examples/lizard.png"); */
+/* ------- BANNER ----- */
+
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
    center/ contain no-repeat url("images/banner-girl.png"),
@@ -332,10 +331,10 @@ background: center / contain no-repeat url("../../media/examples/firefox-logo.sv
 
 .about p {
   font-size: 1.5rem;
+  font-family: "Raleway";
+  font-weight: 300;
   margin: 1rem;
   padding: 1rem;
-  width: 75%;
-  text-align: center;
 }
 
 /* ------- Categories */
@@ -355,13 +354,17 @@ background: center / contain no-repeat url("../../media/examples/firefox-logo.sv
 .categories p {
   justify-content: center;
   color: #fff;
-  font-size: 36px;
+  font-size: 32px;
+  font-weight: 350;
   text-transform: uppercase; 
   align-items: baseline; 
   position: absolute;
   top:50%;
   left: 50%;
   transform:translate(-50%, -50%)
+}
+.categories p:hover {
+  color: #b64036;
 }
 
 .mens {
@@ -488,7 +491,6 @@ border: solid white;
   padding: 4rem;
   overflow: hidden;
   line-height: 1.6;
-
 }
 
 .company-info {
@@ -499,6 +501,7 @@ border: solid white;
 
 .company-info p:last-child {
   color:#969696;
+  font-family: "Raleway-Light"
 }
 
 .social-links {
@@ -518,10 +521,46 @@ border: solid white;
 
 
 @media (max-width: 600px) {
+  /* header */
   .site-header {
-    flex-direction: column;
+    padding-bottom: 0;
+    flex-wrap: wrap;
   }
-  
 
+  .main-navigation {
+    border-top: solid rgb(202, 202, 202) 1px;
+    order: 1;
+  }
+
+  /* categories */
+  .categories p {
+    font-size: 24px;
+  }
+  .mens {
+    flex-basis: 100%
+  }
+  .trends, .glasses, .sale, .bags {
+    flex-basis: 50%;
+  }
+  .womens {
+    flex-basis: 100%;
+  }
+/* footer  */
+  .site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-text {
+    display: none;    
+  }
+  .social-links li {
+    display: inline;
+    order: 1;
+    padding: 20px;
+  }
+  .social-links {
+    padding-top: 10px;
+  }
   }
 
