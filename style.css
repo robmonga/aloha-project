@@ -230,18 +230,15 @@ table {
 =---------------------------------------------------------------------- */
 
 
-.site-container {
- }
 h2 {
   font-family: "PlayfairDisplay", serif;
-  justify-content: center;
   font-size: 30pt;
+  justify-content: center;
 }
 
-a {  
+a {
   text-decoration: none;
 }
-
 
 .italics {
   font-style: italic;
@@ -261,33 +258,33 @@ h1 {
 /* ---------------------HEADER --------------------*/
 
 .site-header {
-  display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 15px;
-  flex-direction: row;
-  margin: 5px;
   box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 15px;
 }
 
 .logo img {
-  max-width: 90px;
   align-self: flex-start;
+  max-width: 90px;
 }
 
 .cart img {
-  max-width: 50px;
   align-self: flex-end;
+  max-width: 50px;
 }
 
 .main-navigation a {
-  color:#e2574c
+  color: #e2574c;
 }
 
 .site-header li {
+  align-items: center;
   display: inline-block;
   padding: 1em;
-  align-items: center;
   justify-content: center;
 }
 
@@ -298,34 +295,38 @@ h1 {
 /* ------- BANNER ----- */
 
 .banner {
+  align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-   center/ contain no-repeat url("images/banner-girl.png"),
-    center / cover no-repeat url("images/flower-bkgd.jpg");
-  height: 400px;
+  center/ contain no-repeat url("images/banner-girl.png"),
+  center / cover no-repeat url("images/flower-bkgd.jpg");
+  color: white;
   border: solid #2d2d2d 2px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  color: white;
+  height: 400px;
+  justify-content: center;
   overflow: hidden;
 }
 
 .banner-collection {
-  text-align: center;
   line-height: 2.3;
+  text-align: center;
+  text-shadow:1px 2px 1px #242424;
+
 }
 
 .seasonal-collection {
   font-size: 56px;
   font-family: "Raleway-Light";
+  text-shadow:1px 2px 1px #242424;
+
 }
 
 /*------ ABOUT ----- */
 
 .about {
-  padding: 10%;
   line-height: 200%;
+  padding: 10%;
   text-align: center;
 }
 
@@ -342,10 +343,9 @@ h1 {
 .categories {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
-.categories div{
+.categories div {
   box-sizing: border-box;
   padding-top: 25%;
   position: relative;
@@ -356,12 +356,12 @@ h1 {
   color: #fff;
   font-size: 32px;
   font-weight: 350;
-  text-transform: uppercase; 
-  align-items: baseline; 
+  text-transform: uppercase;
+  align-items: baseline;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform:translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 .categories p:hover {
   color: #b64036;
@@ -373,7 +373,7 @@ h1 {
   background-size: cover, cover;
   background-position: center;
   border: solid white;
-  flex-basis: 50%
+  flex-basis: 50%;
 }
 
 .trends {
@@ -383,7 +383,6 @@ h1 {
   background-position: center;
   flex-basis: 25%;
   border: solid white;
-
 }
 .glasses {
   background-image: url("images/glasses-category.jpg");
@@ -404,18 +403,17 @@ h1 {
 }
 
 .bags {
-background-image:url("images/bags-category.jpg") ;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover, cover;
-flex-basis: 25%;
-border: solid white;
-
+  background-image: url("images/bags-category.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover, cover;
+  flex-basis: 25%;
+  border: solid white;
 }
 .womens {
-  background-image:url("images/womens-category.jpg");
+  background-image: url("images/womens-category.jpg");
   background-size: cover, cover;
-    background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   flex-basis: 50%;
   border: solid white;
@@ -423,65 +421,71 @@ border: solid white;
 
 /*-----------------MOST LOVED ITEMS ----------*/
 
+.most-loved-products h2 {
+  padding-bottom: 40px;
+}
 .most-loved-products h3 {
   color: #e2574c;
 }
 .most-loved-products p {
   color: #969696;
 }
-
- .most-loved-products {
+.most-loved-products {
   text-align: center;
-  padding-bottom: 5rem;
-  padding-top: 5rem; 
+  padding: 70px 0px;
 }
-
 
 /*-----  SUBSCRIBE AREA ------ */
 .email-form {
   display: block;
-  position: relative;
   padding: 20px;
+  position: relative;
 }
 
 .email-form input {
   border-radius: 25px;
-  width: 20rem;
-  line-height: 2;
+  width: 250px;
+  line-height: 3;
   border: none;
+  min-width: 190px;
 }
 
 .submit {
+  background-color: #e2574c;
   border-radius: 25px;
   border: none;
-  line-height: 2;
-  background-color: #e2574c;
-  text-decoration: none;
+  color: white;
+  line-height: 1;
+  width:120px;
   position: absolute;
+  transform: translate(-121px, 3px); 
+  font-size: 16px;
+  padding:10px;
 }
-.submit:hover{
-  background-color:#b6403c;
+.submit:hover {
+  background-color: #b6403c;
 }
 
 .newsletter {
   overflow: hidden;
-  position: relative;
-  background: url("images/wave-bkgd.jpg") no-repeat bottom;
+  background: bottom no-repeat url("images/wave-bkgd.jpg");
   height: 400px;
   text-align: center;
+  vertical-align: baseline;
 }
 
 .newsletter h2 {
+  color: white;
   padding-top: 90px;
-  color: white; 
+  padding-bottom:30px;
+  text-shadow:1px 2px 1px #242424;
+
 }
 .newsletter p {
-  padding-top: 20px;
-  text-align: center;
-  width: 50px;
-  display: inline;
-  margin: 10px;
   color: white;
+  line-height: 2;
+  margin: 10px;
+  text-align: center;
 }
 
 /*----- FOOTER  ------*/
@@ -496,29 +500,26 @@ border: solid white;
 .company-info {
   float: left;
   color: #fff;
-  font-family: "PlayfairDisplay-Regular"
+  font-family: "PlayfairDisplay-Regular";
 }
 
 .company-info p:last-child {
-  color:#969696;
-  font-family: "Raleway-Light"
+  color: #969696;
+  font-family: "Raleway-Light";
 }
 
 .social-links {
   float: right;
 }
 
-.social-links a{
+.social-links a {
   color: #fff;
 }
 .social-links a:hover {
   color: #b64036;
 }
 
-
-
 /* --------------MEDIA QUERIES ----------------*/
-
 
 @media (max-width: 600px) {
   /* header */
@@ -537,22 +538,25 @@ border: solid white;
     font-size: 24px;
   }
   .mens {
-    flex-basis: 100%
+    flex-basis: 100%;
   }
-  .trends, .glasses, .sale, .bags {
+  .trends,
+  .glasses,
+  .sale,
+  .bags {
     flex-basis: 50%;
   }
   .womens {
     flex-basis: 100%;
   }
-/* footer  */
+  /* footer  */
   .site-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .social-text {
-    display: none;    
+    display: none;
   }
   .social-links li {
     display: inline;
@@ -562,5 +566,5 @@ border: solid white;
   .social-links {
     padding-top: 10px;
   }
-  }
+}
 
