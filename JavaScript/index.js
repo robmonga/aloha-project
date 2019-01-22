@@ -1,3 +1,5 @@
+// Email validity check. Just thanks for hitting subscribe button at this point
+
 $("form").on("click", "button", function(event) {
   event.preventDefault();
   alert("Thanks for subscribing");
@@ -13,6 +15,7 @@ $('.main-carousel').flickity({
     autoPlay:true,
     prevNextButtons:false,
     resize:true,
+    imagesLoaded:true,
   });
 //  smooth scrolling source @ https://css-tricks.com/snippets/jquery/smooth-scrolling/
   $(function() {

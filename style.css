@@ -228,6 +228,8 @@ table {
 /*----- END OF FONTS  ------------------------------------
 ------------------------------------------------------------------------
 =---------------------------------------------------------------------- */
+
+
 .site-container {
  }
 h2 {
@@ -235,17 +237,11 @@ h2 {
   justify-content: center;
   font-size: 30pt;
 }
-a,
-a:hover {
+
+a {  
   text-decoration: none;
-  color: #b64036;
 }
 
-
-/* a:hover {
-    color:#b64036;
-    font-family: "Raleway-Light";
-} */
 
 .italics {
   font-style: italic;
@@ -264,39 +260,27 @@ h1 {
 
 /* ---------------------HEADER --------------------*/
 
-.main-navigation {
-  text-decoration: none;
-  color: #e2574c;
-  font-family: "Raleway-Light";
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  order: 2;
-  padding: 15px;
-  flex: 0 50%;
-}
-
 .site-header {
   display: flex;
-  padding: 5px 5px;
   align-items: center;
-  text-align: center;
-  outline: solid blue;
+  justify-content: space-around;
+  padding: 20px;
+  flex-direction: row;
 }
 
 .logo img {
-  padding: 40px;
-  width: 150px;
-  order: 1;
+  max-width: 90px;
+  align-self: flex-start;
 }
 
-.cart {
-  order: 3;
-  padding-left: 3rem;
-}
 .cart img {
-  flex: 10%;
-  width: 3rem;
+  max-width: 60px;
+  align-self: flex-end;
+  flex-grow: inherit;
+}
+
+.main-navigation a {
+  color:#e2574c
 }
 
 .site-header li {
@@ -311,13 +295,14 @@ a:hover {
   color: #b64036;
 }
 
-/* ------- BANNER -----*/
-
+/* ------- BANNER -----
+background: center / contain no-repeat url("../../media/examples/firefox-logo.svg"),
+            #eee 35% url("../../media/examples/lizard.png"); */
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/banner-girl.png") center top 60px no-repeat,
-    url("images/flower-bkgd.jpg") center;
-  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+   center/ contain no-repeat url("images/banner-girl.png"),
+    center / cover no-repeat url("images/flower-bkgd.jpg");
+  height: 400px;
   border: solid #2d2d2d 2px;
   display: flex;
   align-items: center;
@@ -328,12 +313,12 @@ a:hover {
 }
 
 .banner-collection {
-  min-height: 400px;
   text-align: center;
+  line-height: 2.3;
 }
 
 .seasonal-collection {
-  font-size: 60px;
+  font-size: 56px;
   font-family: "Raleway-Light";
 }
 
@@ -373,6 +358,10 @@ a:hover {
   font-size: 36px;
   text-transform: uppercase; 
   align-items: baseline; 
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
 }
 
 .mens {
@@ -465,6 +454,10 @@ border: solid white;
   line-height: 2;
   background-color: #e2574c;
   text-decoration: none;
+  position: absolute;
+}
+.submit:hover{
+  background-color:#b6403c;
 }
 
 .newsletter {
@@ -515,6 +508,9 @@ border: solid white;
 .social-links a{
   color: #fff;
 }
+.social-links a:hover {
+  color: #b64036;
+}
 
 
 
@@ -522,7 +518,10 @@ border: solid white;
 
 
 @media (max-width: 600px) {
-  .site-container {
-    
+  .site-header {
+    flex-direction: column;
   }
-}
+  
+
+  }
+
