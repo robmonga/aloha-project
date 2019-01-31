@@ -13,6 +13,8 @@
 </head>
 
 <body class="site-container">
+        <a class="screen-reader-text" href="#main">Skip to content</a>
+        
     <header class="site-header">
         <div class="logo">
             <img src="images/aloha-logo.svg" alt="aloha-logo">
@@ -35,13 +37,13 @@
         <h2><span class="seasonal-collection">Spring/Summer 2016</span></h2>
     </section>
 
-
+    <main id="main" class="site-main" tabindex="-1">
     <section class="about" id="about">
         <h2><span class="italics">Hand-Crafted </span><span class="strong">Styles</span></h2>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing.
             Browser our current selection of products or sign-up for updates below</p>
     </section>
-    
+</main>
     <section class="categories" id="shop">
        <div class="mens cat-title">
             <p>Men's</p>
@@ -161,9 +163,10 @@
             </ul>
         </div>
     </Footer>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="flickity.pkgd.min.js"></script>
-    <script src="JavaScript/index.js"></script>
+    <script defer src="jquery-3.3.1.min.js"></script>
+    <script defer src="flickity.pkgd.min.js"></script>
+    <script async src="tota11y.min.js"></script>
+    <script defer src="JavaScript/index.js"></script>
 </body>
 
 </html> 

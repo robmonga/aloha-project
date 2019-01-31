@@ -229,6 +229,22 @@ table {
 ------------------------------------------------------------------------
 =---------------------------------------------------------------------- */
 
+.screen-reader-text {
+  /* clip: rect(1px, 1px, 1px, 1px); */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  /* clip: auto !important; */
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content*/
+}
 
 h2 {
   font-family: "PlayfairDisplay", serif;
@@ -513,7 +529,7 @@ h1 {
 }
 
 .social-links a {
-  color: #fff;
+  color: white;
 }
 .social-links a:hover {
   color: #b64036;
